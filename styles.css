@@ -64,6 +64,7 @@ body {
     position: absolute;
     height: 40%;
     width: 40%;
+    opacity: 50%;
     align-content: center;
     top: 45%;
     margin: 0 auto;
@@ -152,7 +153,6 @@ footer p a {
     #js-img {
         height: 50%;
         width: 50%;
-        opacity: 50%;
         top: 40%;
     }
 }
