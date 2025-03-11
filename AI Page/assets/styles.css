@@ -1,0 +1,182 @@
+:root {
+    --main-bg: #282828;
+    --container-bg: #303030;
+    --header: #353535;
+    --bot-message: #f26329;
+    --user-message: #404040;
+    --user-text-color: rgba(255, 255, 255, 0.6);
+    --user-icon: rgba(255, 255, 255, 0.8);
+    --bot-icon: #ff9c75;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--main-bg);
+}
+
+.container {
+    background: var(--container-bg);
+    width: 640px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-height: 100px;
+}
+
+.palito-logo {
+    max-width: 15%;
+    max-height: 15%;
+    margin: 10px 40px;
+}
+
+.card {
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--header);
+    border-radius: 5px;
+}
+/* does not work on firefox!! */
+
+.card-body {
+    padding: 0.8rem;
+    font-size: 1rem;
+    height: 500px;
+    overflow-y: auto;
+    transition: all ease-in-out 0.2s;
+}
+
+.card-body h1 {
+    display: flex;
+    height: 100%;
+    font-size: 60px;
+    color: var(--user-icon);
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body h1.hidden {
+    display: none;
+}
+
+.card-body .chat-bot {
+    display: flex;
+    align-items: center;
+}
+
+.card-body .user {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.card-body .chat-bot p {
+    background: var(--bot-message);
+    border-radius: 10px;
+    width: 50%;
+    padding: 0.8rem;
+    white-space: pre-wrap;
+}
+
+.card-body .user p {
+    background: var(--user-message);
+    color: var(--user-text-color);
+    border-radius: 10px;
+    width: 50%;
+    padding: 0.8rem;
+    white-space: pre-wrap;
+}
+
+.chat-bot,
+.user {
+    margin: 1rem 0;
+}
+
+.chat .user-icon {
+    color: var(--user-text-color);
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    border: 2px solid #424242;
+}
+
+.chat .bot-icon {
+    color: var(--bot-message);
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    border: 2px solid #424242;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.card-footer textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    background: var(--header);
+    color: var(--user-text-color);
+    padding: 1.5rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.sending-icon {
+    position: absolute;
+    right: 30px;
+    bottom: 22px;
+}
+
+.sending-icon .fa-paper-plane {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
