@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #201c1c;
+    --primary-color-hover: #3a3434;
+    --primary-color-darker: #000000;
+    --secondary-color: rgb(82, 82, 82);
+    --btn-active: #453e3e;
+    --white: #fff;
+    --operator-btn: rgb(217, 105, 0);
+    --operator-hover: rgb(167, 81, 0);
+    --operator-active: rgb(137, 66, 0);
+    --del-btn: firebrick;
+    --del-hover: rgb(135, 26, 26);
+    --del-active: rgb(109, 22, 22);
+    --invalid: rgb(255, 49, 49);
+    --invalid-bg: rgb(255, 212, 212);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 640px;
+    margin: 50px auto;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+.calculator {
+    width: 500px;
+}
+
+.display {
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+    outline: none;
+    border: solid 3px black;
+    cursor: not-allowed;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+/* buttons */
+.btn {
+    width: 100%;
+    height: 50px;
+    border: 1px solid transparent;
+    background: var(--primary-color);
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.btn:hover {
+    background: var(--primary-color-hover);
+}
+
+.btn:active {
+    background: var(--btn-active);
+}
+
+/* operator button */
+.operator {
+    background: var(--operator-btn);
+}
+
+.operator:hover {
+    background: var(--operator-hover);
+}
+
+.operator:active {
+    background: var(--operator-active);
+}
+
+/* del button */
+.btn-del {
+    background: var(--del-btn);
+}
+
+.btn-del:hover {
+    background: var(--del-hover);
+}
+
+.btn-del:active {
+    background: var(--del-active);
+}
+
+/* invalid */
+.hidden {
+    opacity: 0;
+}
+
+.invalid {
+    text-align: right;
+    color: var(--invalid);
+    font-weight: 600;
+}
+
+.display.invalid-display {
+    border-color: var(--invalid);
+    background: var(--invalid-bg);
+}

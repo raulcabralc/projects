@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | raulcabralc</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pridi:wght@200;300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Calculator</h1>
+
+        <table class="calculator">
+            <tr>
+                <td colspan="4"><input type="text" class="display" readonly onfocus="this.blur()"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="invalid hidden">⚠ Invalid count</td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-clear operator">C</button></td>
+                <td><button class="btn btn-num operator">(</button></td>
+                <td><button class="btn btn-num operator">)</button></td>
+                <td><button class="btn operator divide">÷</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-num">7</button></td>
+                <td><button class="btn btn-num">8</button></td>
+                <td><button class="btn btn-num">9</button></td>
+                <td><button class="btn operator time">×</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-num">4</button></td>
+                <td><button class="btn btn-num">5</button></td>
+                <td><button class="btn btn-num">6</button></td>
+                <td><button class="btn btn-num operator">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-num">1</button></td>
+                <td><button class="btn btn-num">2</button></td>
+                <td><button class="btn btn-num">3</button></td>
+                <td><button class="btn btn-num operator">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-num">.</button></td>
+                <td><button class="btn btn-num">0</button></td>
+                <td><button class="btn btn-del operator">&laquo;</button></td>
+                <td><button class="btn btn-equal operator">=</button></td>
+            </tr>
+
+        </table>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
