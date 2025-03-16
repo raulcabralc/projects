@@ -1,0 +1,291 @@
+:root {
+    --body: #ffffff;
+    --menu: #3029b5;
+    --menu-border: #243da0;
+    --logsub: #262096;
+    --logsub-hover: #1f2878;
+    --categories-bot: rgb(120, 120, 120);
+    --footer-border: #dadada;
+    --footer-a: #656565;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--body);
+}
+
+.menu {
+    position: relative;
+    background: var(--menu);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid var(--menu-border);
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.date,
+.logsub-container {
+    position: absolute;
+}
+
+.sub {
+    margin-right: 20px;
+}
+
+.logsub-container {
+    right: 5%;
+    font-weight: 600;
+}
+
+.date {
+    left: 5%;
+}
+
+.logsub-container a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: var(--logsub);
+    border-radius: 10px;
+}
+
+.logsub-container a:hover {
+    background: var(--logsub-hover);
+}
+
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    padding: 20px;
+    border-bottom: solid 2px var(--categories-bot);
+}
+
+.categories a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.categories a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -0.5rem;
+    width: 0;
+    height: 0.1rem;
+    background: black;
+    transition: all ease-in-out 0.3s;
+}
+
+.categories a:hover::after {
+    width: 70%;
+    left: 15%;
+}
+
+.breaking {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(./img/trump.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.breaking-text {
+    color: white;
+    margin-left: 10px;
+    width: 35%;
+}
+
+.breaking-text h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.breaking-text p {
+    font-size: 1.5em;
+}
+
+.category-title {
+    color: var(--menu);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr 0.5fr;
+    margin: 10px;
+    gap: 15px;
+}
+
+.columns img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.new {
+    margin-bottom: 10px;
+}
+
+.first-news-col {
+    font-size: 24px;
+}
+
+.first-news-col h1 {
+    font-size: 32px;
+}
+
+.third-news-col {
+    padding-left: 15px;
+    border-left: 2px solid var(--footer-a);
+}
+
+.footer {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    border-top: 2px solid var(--footer-border);
+    padding: 10px;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: var(--footer-a);
+}
+
+.my-footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.my-footer a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 980px) {
+    .menu {
+        flex-flow: column wrap;
+    }
+
+    .date,
+    .logsub-container {
+        position: static;
+        margin: 0;
+    }
+
+    .sub {
+        margin: 0;
+    }
+
+    .logsub-container {
+        position: absolute;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .breaking-text {
+        width: 50%;
+    }
+
+    .columns {
+        grid-template-columns: 1fr 0.75fr 1fr;
+    }
+
+    .first-news-col {
+        grid-column: 1 / span 3;
+    }
+
+    .second-news-col {
+        grid-column: 1 / span 2;
+    }
+
+    .third-news-col {
+        border: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .logsub-container {
+        position: static;
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        text-align: center;
+    }
+
+    .categories a {
+        text-decoration: underline;
+    }
+
+    .breaking-text {
+        width: 60%;
+        font-size: 0.8em;
+    }
+
+    .columns {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .second-news-col {
+        grid-column: 1 / span 3;
+    }
+
+    .third-news-col {
+        grid-column: 1 / span 3;
+    }
+}
+
+@media (max-width: 576px) {
+    .breaking-text {
+        width: 80%;
+        font-size: 0.6em;
+    }
+
+    .footer {
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    .footer a {
+        margin: 10px
+    }
+}
+
+@media (max-width: 450px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .breaking-text {
+        width: 100%;
+    }
+}
