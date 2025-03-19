@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Raul Cabral</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --primary-red: #e8443c;
+            --primary-white: #f8f4f4;
+            --secondary-red: #891d16;
+            --javascript: #dad31e;
+            --css: #7233e0;
+            --html: #e0a333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: ease-in-out all 0.15s;
+        }
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background: url(./bg.svg);
+            background-color: var(--primary-white);
+            background-size: contain;
+            overflow-x: hidden;
+        }
+
+        .personal-container {
+            background: var(--primary-red);
+            color: var(--primary-white);
+            padding: 10px;
+            line-height: 1.5em;
+            width: 100vw;
+            border-bottom: 2px solid var(--secondary-red);
+            font-family: 'Nunito', sans-serif;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            font-size: 130%;
+        }
+
+        .personal-data {
+            display: flex;
+            flex-flow: column wrap;
+            margin-left: 40px;
+        }
+
+        .personal-data h1 {
+            margin-bottom: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .personal-data a {
+            color: var(--primary-white);
+            text-decoration: none;
+            border-bottom: 2px var(--secondary-red) solid;
+        }
+
+        .personal-data a.github {
+            border: none;
+        }
+
+        .raul-photo {
+            width: 225px;
+            height: 225px;
+            border-radius: 30%;
+            border: var(--primary-white) solid 10px;
+        }
+
+        .raul-photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 30%;
+            border: 5px solid var(--secondary-red);
+        }
+
+        .experience-container {
+            margin-left: 10px;
+        }
+
+        .experience-container {
+            font-size: 120%;
+            color: var(--primary-red);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        body p {
+            color: black;
+        }
+
+        .projects ul li {
+            list-style-type: none;
+            text-decoration: 2px underline var(--secondary-red);
+        }
+
+        .projects p {
+            margin-left: 10px;
+        }
+
+        .project-link a {
+            font-size: 70%;
+            text-decoration: underline 2px;
+            color: var(--secondary-red);
+            font-family: 'Nunito', sans-serif;
+        }
+
+        a:hover {
+            opacity: 70%;
+        }
+
+        .list-p {
+            margin-bottom: 5px;
+        }
+
+        .projects span {
+            color: var(--primary-white);
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        .js {
+            background: var(--javascript);
+        }
+
+        .css {
+            background: var(--css);
+        }
+
+        .html {
+            background: var(--html);
+        }
+
+        #google-translate {
+            margin-left: 15%;
+        }
+
+        #google-translate select {
+            background: var(--primary-white);
+            border: 3px solid var(--secondary-red);
+            border-radius: 5px;
+            outline: none;
+            font-size: 2em;
+            color: black;
+            padding: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        #google-translate span {
+            display: none;
+        }
+
+        #google-translate * {
+            color: var(--primary-red);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Informações pessoais -->
+    <div class="personal-container">
+        <div class="raul-photo">
+            <img src="./raul.jpg" alt="Foto de Raul Cabral">
+        </div>
+        <div class="personal-data">
+            <h1 class="name">Raul Cabral Caxeta</h1>
+            <span><a href="https://wa.me/558393989159" class="whatsapp"><i class="fa-brands fa-whatsapp"></i> (83)
+                    9398-9159 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+            <span><a href="mailto:raulcabralc@gmail.com" class="email"><i class="fa-solid fa-envelope"></i>
+                    raulcabralc@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+            <span><a href="https://www.linkedin.com/in/raul-cabral-caxeta/" class="linkedin"><i
+                        class="fa-brands fa-linkedin-in"></i> Raul Cabral Caxeta <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+            <span><a href="https://github.com/raulcabralc" class="github"><i class="fa-brands fa-github"></i>
+                    raulcabralc <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+
+        </div>
+        <div id="google-translate">Choose your language:</div>
+    </div>
+
+    <!-- Experiencia e treinamento -->
+    <div class="experience-container">
+        <div class="trainings section">
+            <h1>Treinamentos Realizados</h1>
+            <p>Estudo HTML5, CSS e JavaScript, no momento com foco em JavaScript</p>
+        </div>
+
+        <div class="professional-experience section">
+            <h1>Experiências Profissionais</h1>
+            <p>Nenhuma, por enquanto.</p>
+        </div>
+
+        <div class="projects section">
+            <h1>Projetos Pessoais <span class="project-link"><a href="https://raul-projects.netlify.app/">Projetos <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></span></h1>
+            <ul>
+                <li>Calculadora</li>
+                <p class="list-p">Calculadora que opera contas básicas e contém operadores. <span
+                        class="js">JavaScript</span></p>
+                <li>Timer</li>
+                <p class="list-p">Temporizador com botões para Iniciar, Pausar e Reiniciar. <span
+                        class="js">JavaScript</span></p>
+                <li>Lista de Tarefas</li>
+                <p class="list-p">Lista que permite o usuário guardar uma tarefa e removê-la. <span
+                        class="js">JavaScript</span>
+                </p>
+
+                <li>Borda Animada</li>
+                <p class="list-p">Dois tipos de bordas com estilo animado. <span class="css">CSS</span></p>
+                <li>Landing Page</li>
+                <p class="list-p">Landing page de contrabaixos com design responsivo. <span class="html">HTML5</span>
+                </p>
+                <li>AI Page</li>
+                <p class="list-p">Página de IA (I.A. não implementada ainda). <span class="html">HTML5</span></p>
+                <li>News Page</li>
+                <p class="list-p">Página de notícias, simulando um jornal online com design responsivo.
+                    <span class="html">HTML5</span>
+                </p>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'pt-BR' },
+                'google-translate'
+            );
+        } 
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
