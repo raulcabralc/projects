@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | raulcabralc</title>
+    <link rel="stylesheet" href="./style.css"> <!--Arquivo relativo-->
+</head>
+
+<body>
+    <section class="container">
+        <h1>Register</h1>
+
+        <ul>
+            <li>Fields can't be empty</li>
+            <li>User can only have numbers and letters</li>
+            <li>User can only be 3 to 12 letters</li>
+            <li>Password can only be 6 to 12 letters</li>
+        </ul>
+
+        <form action="/" class="form" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="name validate" />
+
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" class="surname validate" />
+
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" class="cpf validate" />
+
+            <label for="user">User</label>
+            <input type="text" name="user" class="user validate" />
+
+            <label for="password">Password</label>
+            <input type="password" name="password" class="password validate" />
+
+            <label for="confirm-password">Confirm password</label>
+            <input type="password" name="confirm-password" class="confirm-password validate" />
+
+
+            <button name="btn" type="submit" id="btn">Submit</button>
+        </form>
+
+        </div>
+
+    </section>
+
+    <script src="./cpfvalid.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
