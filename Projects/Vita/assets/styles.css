@@ -1,0 +1,821 @@
+:root{
+    --main-bg: #60a2ff;
+    --mint: #0FFCBE;
+    --mint-dark: #0fd19d;
+    --mint-darker: #0ea47c;
+    --blue: #106EBE;
+    --blue-dark: #0d5696;
+    --blue-darker: #082c84;
+    --blue-black: #040424;
+    --white-dark: #cccccc;
+    --white-darker: #a5a5a5;
+    --gold: #ffae00;
+    --gold-dark: #c18400;
+    --gold-darker: #a77200;
+    --sin: #d01444;
+    --neodent: #da2ea4;
+    --straumann: #2d9b6d;
+    --sin-dark: #ad1138;
+    --neodent-dark: #a21f79;
+    --straumann-dark: #217150;
+    --insta1: #405DE6;
+    --insta2: #833AB4;
+    --insta3: #C13584;
+    --insta4: #FD1D1D;
+    --vid-border: #3b3b3b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: gray;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* MAIN SECTION */
+
+.main-bg{
+    background: url(./img/main-bg.svg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main-section{
+    background: url(./img/idosos-sorrindo.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: center;
+}
+
+.velhos-img{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.logo img{
+    width: 30%;
+}
+
+.main-text{
+    line-height: 80px;
+    font-size: 1.2em;
+    margin-left: 200px;
+    color: white;
+    padding: 15px;
+}
+
+h2{
+    font-weight: 300;
+}
+
+.main-text h1{
+    font-weight: 500;
+    font-size: 2.4em;
+    background: black;
+    padding: 4px 12px;
+    border-radius: 30px;
+    box-shadow: 3px 0 15px 10px rgba(255, 255, 255, 0.35);
+}
+
+.agendar a{
+    color: black;
+    text-decoration: none;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.35);
+    transition: all ease-in-out 0.1s;
+    flex-flow: column nowrap;
+    max-width: 760px;
+    display: flex;
+    flex-flow: column wrap;
+    line-height: normal;
+}
+
+.agendar a:hover{
+    background: var(--white-dark);
+    font-weight: 600;
+}
+
+.agendar a:active{
+    background: var(--white-darker);
+}
+
+/* SHY SECTION */
+
+.shy-section{
+    background: var(--blue-darker);
+    min-height: 95vh;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.shy-grid{
+    height: 80%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.shy-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    border: 3px solid black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.shy-text{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    color: white;
+    text-align: left;
+    gap: 60px;
+}
+
+.shy-text h2{
+    font-weight: 400;
+    font-size: 1.65em;
+}
+
+.shy-text h2::before{
+    content: '❯❯';
+    color: var(--mint);
+    margin-right: 7px;
+}
+
+.especialista{
+    margin: 20px auto;
+}
+
+.especialista a{
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    background: var(--mint);
+    padding: 15px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.35);
+    transition: all ease-in-out 0.1s;
+}
+
+.especialista a:hover{
+    background: var(--mint-dark);
+    font-weight: 600;
+}
+
+.especialista a:active{
+    background: var(--mint-darker);
+}
+
+.especialista span{
+    font-weight: 600;
+}
+
+/* GRID SECTION */
+
+.grid-section{
+    background: var(--blue-black);
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.grid-section span{
+    color: var(--main-bg);
+}
+
+.grid-section h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.3em;
+    margin: 30px;
+}
+
+.grid-section h2{
+    font-weight: 500;
+    margin: 30px;
+    margin-bottom: 60px;
+    font-size: 1.7em;
+}
+
+.grid-section exc{
+    color: white;
+    font-weight: 600;
+}
+
+.grid-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.grid-images img{
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.35);
+}
+
+.grid-section .agendar{
+    margin: 50px;
+    font-size: 1.7em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.grid-section .agendar a{
+    background: white;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.35);
+}
+
+/* VIDEOS SECTION */
+
+.videos-section{
+    min-height: 100vh;
+    background: black;
+    color: white;
+    padding: 50px 200px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.videos-section span{
+    color: var(--gold);
+}
+
+.videos-section h1{
+    font-weight: 600;
+}
+
+.videos-section h2,
+.videos-section h3{
+    font-weight: 100;
+    letter-spacing: 0.2em;
+}
+
+.vid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    line-height: 50px;
+}
+
+.vid video{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 15px 10px rgba(255, 174, 0, 0.35);
+}
+
+.videos-section .weight500{
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-size: 1.7em;
+}
+
+.videos-section .agendar{
+    margin: 50px;
+    font-size: 1.7em;
+}
+
+.videos-section .agendar a{
+    background: var(--gold);
+    box-shadow: 0 0 15px 10px rgba(255, 174, 0, 0.35);
+}
+
+.videos-section .agendar a:hover{
+    background: var(--gold-dark);
+}
+
+.videos-section .agendar a:active{
+    background: var(--gold-darker);
+}
+
+/* BRANDS SECTION */
+
+.brands-section{
+    min-height: 80vh;
+    background: url(./img/brands-bg.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+.brands-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px 200px;
+}
+
+.brands-img img{
+    height: auto;
+    width: 225px;
+    margin: 0 auto;
+}
+
+.brand{
+    position: relative;
+}
+
+.br1{
+    border: 4px var(--sin) solid;
+}
+
+.br2{
+    border: 4px var(--neodent) solid;
+}
+
+.br3{
+    border: 4px var(--straumann) solid;
+}
+
+.brands-section h2{
+    font-size: 2.2em;
+    font-weight: 600;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.brands-section h1{
+    font-size: 2.7em;
+    font-weight: 700;
+    color: var(--mint);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    text-transform: uppercase;
+}
+
+.br1:hover{
+    background: red;
+}
+
+.br-text{
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
+    margin: 20px 10px;
+    font-size: 1.7em;
+    font-weight: 500;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.br1t{
+    background: var(--sin);
+    box-shadow: 3px 0 15px 10px rgba(255, 28, 123, 0.35);
+}
+
+.br2t{
+    background: var(--neodent);
+    box-shadow: 3px 0 15px 10px rgba(225, 28, 255, 0.35);
+}
+
+.br3t{
+    background: var(--straumann);
+    box-shadow: 3px 0 15px 10px rgba(28, 255, 172, 0.35);
+}
+
+.implant{
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.br1-implant{
+    background: var(--sin);
+    border: 4px solid var(--sin-dark);
+}
+
+.br2-implant{
+    background: var(--neodent);
+    border: 4px solid var(--neodent-dark);
+}
+
+.br3-implant{
+    background: var(--straumann);
+    border: 4px solid var(--straumann-dark);
+}
+
+img.implant{
+    width: 120px;
+}
+
+.brand-div{
+    position: relative;
+}
+
+/* EXTRA SECTION */
+
+.extra-section{
+    min-height: 60vh;
+    background: url(./img/extra-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.extra-section h2.structure{
+    font-size: 2.5em;
+    background: black;
+    opacity: 80%;
+    padding: 30px 0;
+    text-decoration: dotted underline 3px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.extra-section ul{
+    background: var(--blue-darker);
+    opacity: 80%;
+    padding: 0 20px;
+}
+
+.extra-section li{
+    align-content: center;
+    list-style-type: none;
+    height: 70px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.extra-section li::before{
+    content: '➤ ';
+    color: white;
+    text-shadow: 0 0 0, 0 0 0, 0 0 0, 3px 3px 0 black;
+}
+
+.extra-section h2.made{
+    font-size: 2.8em;
+    opacity: 100%;
+    padding: 30px 0;
+    font-weight: 500;
+}
+
+.extra-section span{
+    color: var(--main-bg);
+}
+
+.thinking{
+    background: var(--blue-black);
+    padding: 0 20px;
+}
+
+.thinking .agendar{
+    padding: 30px 0 60px 0;
+    font-size: 1.7em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* VALUES SECTION */
+
+.values-section{
+    min-height: 50vh;
+    text-align: center;
+    background: var(--blue);
+}
+
+.values-grid{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+}
+
+.values-section h1{
+    font-size: 2.6em;
+    font-weight: 500;
+}
+
+.values-section h2{
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+.mission{
+    background: linear-gradient(to right, var(--sin-dark), var(--sin), var(--sin-dark));;
+    padding: 20px;
+}
+
+.values{
+    background: linear-gradient(to right, var(--gold-dark), var(--gold), var(--gold-dark));
+}
+
+.card{
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+/* FOOTER */
+
+.footer{
+    text-align: center;
+    background: var(--blue-dark);
+    color: white;
+}
+
+.footer img{
+    padding: 10px 40vw;
+    border-top: 2px solid var(--blue-black);
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer h2 a{
+    text-decoration: 1px solid underline var(--mint);
+}
+
+.contact-method{
+    margin: 20px;
+}
+
+.contact-method a{
+    margin: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    transition: all ease-out 0.15s;
+}
+
+.whatsapp{
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.whatsapp a{
+    border: 5px solid var(--straumann);
+}
+
+.instagram a{
+    border-image: linear-gradient(to right, var(--insta1), var(--insta2), var(--insta3), #F56040, var(--insta4)) 1;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.instagram a:hover{
+    background: linear-gradient(to right, var(--insta1), var(--insta2), var(--insta3), #F56040, var(--insta4));
+}
+
+.whatsapp a:hover{
+    background: var(--straumann);
+}
+
+.footer h2{
+    font-size: 1.7em;
+}
+
+.footer span{
+    color: var(--mint);
+}
+
+.footer a{
+    color: white;
+}
+
+.loc h1{
+    font-size: 1.7em;
+    font-weight: 500;
+    background: var(--blue-black);
+    border-top: 1px solid white;
+    padding: 10px;
+}
+
+.loc h1 a{
+    color: var(--mint);
+    font-size: 1.85em;
+    text-decoration: 2px solid underline;
+}
+
+.loc h1 a::before{
+    content: '📌';
+}
+
+@media (max-width: 1300px) {
+    .main-section {
+        min-height: 150vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: none;
+    }
+
+    .main-text {
+        margin-left: 0;
+        line-height: 60px;
+        margin: 0 auto;
+        
+        & h1{ /* testando nova parada do css!! */
+            font-size: 3em;
+            padding: 8px 16px;
+        }
+    }
+
+    .velhos-img {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+
+        & img{
+            width: 40%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .videos-section{
+        & .agendar{
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        & video{
+            width: 100%;
+            margin-right: 10px;
+        }
+
+        & .vid{
+            gap: 20px;
+        }
+    }
+
+    .brands-img{
+        padding: 100px 40px;
+    }
+
+    .implant{
+        right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo img:nth-child(2){
+        background: white;
+        border-radius: 2px;
+    }
+
+    .velhos-img img{
+        width: 52%;
+    }
+
+    .shy-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-images{
+        grid-template-columns: 1fr;
+    }
+
+    .vid{
+        grid-template-columns: 1fr;
+
+        & .text{
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 10px;
+        }
+
+        & .last-text{
+            border-color: var(--vid-border)
+        }
+    }
+
+    .brands-img{
+        padding: 100px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .velhos-img img{
+        width: 62%;
+    }
+
+    .especialista a{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+    .videos-section{
+        padding: 50px 100px;
+    }
+
+    .brands-img{
+        grid-template-columns: 1fr;
+    }
+
+    .brands-section{
+        padding: 0 20px;
+    }
+
+    .implant{
+        position: absolute;
+        right: 3%;
+        bottom: 36%;
+    }
+
+    .values-grid{
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .footer img{
+        padding: 10px 30vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-text{
+        line-height: 90px;
+    }
+
+    .velhos-img img{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .grid-images img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .videos-section{
+        padding: 50px 50px;
+
+        & .agendar{
+            font-size: 1.4em;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .loc h1{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 412px) {
+    .velhos-img img{
+        margin: 0;
+    }
+
+    .agendar{
+        font-size: 1.3em !important;
+    }
+
+    .videos-section{
+        padding: 50px 20px;
+    }
+
+    .brands-section{
+        padding: 0 10px;
+        padding-bottom: 20px;
+    }
+
+    .extra-section ul{
+        padding-bottom: 50px;
+    }
+
+    .footer img{
+        padding: 10px 20vw;
+    }
+
+    .loc h1{
+        font-size: 1.2em;
+    }
+}
