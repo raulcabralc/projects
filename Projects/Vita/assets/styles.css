@@ -311,6 +311,7 @@ h2{
 .videos-section .agendar a{
     background: var(--gold);
     box-shadow: 0 0 15px 10px rgba(255, 174, 0, 0.35);
+    margin: 0 auto;
 }
 
 .videos-section .agendar a:hover{
