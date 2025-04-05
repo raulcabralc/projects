@@ -300,7 +300,8 @@ h3 {
         }
 
         & .tailwind,
-        .webpack {
+        .webpack,
+        .express {
             & img {
                 width: 22px;
                 height: 22px;
