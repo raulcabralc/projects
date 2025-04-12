@@ -512,6 +512,24 @@
       href="./assets/img/web-design.png"
       type="image/x-icon"
     />
+    <script>
+      function includeHTML() {
+        const includes = document.querySelectorAll("[data-include]");
+        includes.forEach((element) => {
+          const file = element.getAttribute("data-include");
+          fetch(file)
+            .then((response) => response.text())
+            .then((html) => {
+              element.innerHTML = html;
+            })
+            .catch((error) => {
+              console.error("Error while loading file:", error);
+            });
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", includeHTML);
+    </script>
   </head>
 
   <body>
@@ -542,6 +560,20 @@
         <p>Some projects that I developed</p>
       </div>
       <div class="projects-grid">
+        <a
+          href="https://www.linkedin.com/feed/update/urn:li:activity:7315914793834491905/"
+        >
+          <div class="agenda card">
+            <div class="card-img">
+              <img src="./assets/img/agenda.png" alt="Contact Agenda" />
+            </div>
+            <div class="card-text">
+              <h3>Contact Agenda</h3>
+              <p>MVC & CRUD project</p>
+            </div>
+          </div>
+        </a>
+
         <a href="./Projects/Calculator/index.html">
           <div class="calculator card">
             <div class="card-img">
@@ -660,8 +692,8 @@
           initiative to start studying. This year things got different, I
           started learning about web development and its concepts, since then,
           I'm aiming to become a Full-Stack Developer. Currently, I've been
-          learning JavaScript, and I've already learned HTML 5, CSS, Sass,
-          Bootstrap and Webpacking.
+          learning JavaScript Tools, and I've already learned JavaScript, HTML
+          5, CSS, Sass, Bootstrap and Webpacking.
         </p>
         <div class="certificates">
           <div class="certif">
@@ -709,16 +741,16 @@
         <h2>Main technologies</h2>
         <table>
           <tr>
+            <td>JavaScript</td>
+            <td class="symbol"><i class="fa-brands fa-square-js"></i></td>
+          </tr>
+          <tr>
             <td>HTML 5</td>
             <td class="symbol"><i class="fa-brands fa-html5"></i></td>
           </tr>
           <tr>
             <td>CSS 3</td>
             <td class="symbol"><i class="fa-brands fa-css3-alt"></i></td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td class="symbol"><i class="fa-brands fa-square-js"></i></td>
           </tr>
           <tr>
             <td>Express</td>
