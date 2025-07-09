@@ -56,8 +56,8 @@
         min-height: 100vh;
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 150px;
+        grid-template-columns: 5fr 1fr;
+        padding: 250px;
         gap: 50px;
 
         & .welcome-text {
@@ -329,7 +329,8 @@
 
           & .tailwind,
           .webpack,
-          .express {
+          .express,
+          .redux {
             & img {
               width: 22px;
               height: 22px;
@@ -352,7 +353,6 @@
           }
 
           & p {
-            border-bottom: 2px solid var(--black-yellow);
             border-top: 2px solid var(--projects-bg-lighter);
             padding: 10px 0 20px;
             font-size: 1.2rem;
@@ -360,12 +360,14 @@
             color: var(--lighter-gray);
           }
 
-          & p.last {
-            border-bottom: none;
-          }
-
           & .certif {
             margin: 20px 0;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--black-yellow);
+          }
+
+          & .certif:last-child {
+            border: none;
           }
 
           & a {
@@ -549,9 +551,7 @@
           </p>
         </div>
       </div>
-      <div class="welcome-img">
-        <img src="./assets/img/web-code.svg" alt="Web Code" />
-      </div>
+      <div class="welcome-img"></div>
       <div class="block2 block"></div>
     </div>
     <div class="projects-section">
@@ -560,6 +560,51 @@
         <p>Some projects that I developed</p>
       </div>
       <div class="projects-grid">
+        <a
+          href="https://www.linkedin.com/feed/update/urn:li:activity:7347368731720716289/"
+        >
+          <div class="financial-calc-br card">
+            <div class="card-img">
+              <img src="./assets/img/calc.png" alt="Financial Calc BR" />
+            </div>
+            <div class="card-text">
+              <h3>Financial Calc BR</h3>
+              <p>TypeScript project</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/feed/update/urn:li:activity:7340770738716434432/"
+        >
+          <div class="school-management-react card">
+            <div class="card-img">
+              <img
+                src="./assets/img/school-management.png"
+                alt="Students Management with React"
+              />
+            </div>
+            <div class="card-text">
+              <h3>Students Management</h3>
+              <p>React & Redux project</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/feed/update/urn:li:activity:7336444362702184448/"
+        >
+          <div class="python-sos card">
+            <div class="card-img">
+              <img src="./assets/img/pythonsos.png" alt="PythonSOS" />
+            </div>
+            <div class="card-text">
+              <h3>PythonSOS</h3>
+              <p>Flask project</p>
+            </div>
+          </div>
+        </a>
+
         <a
           href="https://www.linkedin.com/feed/update/urn:li:activity:7322630304207134720/"
         >
@@ -765,6 +810,68 @@
               knowledge about it.
             </p>
           </div>
+          <div class="certif">
+            <span class="year">06 - 2025</span>
+            <a
+              href="https://compassuol.udemy.com/certificate/UC-01ee22f7-daae-49a6-bcd8-143227407dad/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+              target="_blank"
+            >
+              <h3>
+                Aprenda Git e GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+            </a>
+            <h4>Udemy</h4>
+          </div>
+          <div class="certif">
+            <span class="year">06 - 2025</span>
+            <a
+              href="https://compassuol.udemy.com/certificate/UC-e8fb0000-7a83-406c-a3b2-e721665bf319/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+              target="_blank"
+            >
+              <h3>
+                JavaScript do Zero ao Avançado
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+            </a>
+            <h4>Udemy</h4>
+          </div>
+          <div class="certif">
+            <span class="year">06 - 2025</span>
+            <a
+              href="https://compassuol.udemy.com/certificate/UC-0af594c2-82bd-4cad-8536-3a4921f3e8c3/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+              target="_blank"
+            >
+              <h3>
+                Node JS Básico ao Avançado
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+            </a>
+            <h4>Udemy</h4>
+          </div>
+          <div class="certif">
+            <span class="year">07 - 2025</span>
+            <a
+              href="https://compassuol.udemy.com/certificate/UC-d23e8657-1c95-4d6a-967d-c1b66b2fae77/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+              target="_blank"
+            >
+              <h3>
+                Dominando banco de dado com MySQL
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+            </a>
+            <h4>Udemy</h4>
+          </div>
+          <div class="certif">
+            <span class="year">07 - 2025</span>
+            <a href="" target="_blank">
+              <h3>
+                Aprenda TypeScript em 7 dias
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+            </a>
+            <h4>Udemy</h4>
+          </div>
         </div>
       </div>
       <div class="about-img">
@@ -796,16 +903,13 @@
             </td>
           </tr>
           <tr>
-            <td>Bootstrap</td>
-            <td class="symbol"><i class="fa-brands fa-bootstrap"></i></td>
-          </tr>
-          <tr>
             <td>Sass</td>
             <td class="symbol"><i class="fa-brands fa-sass"></i></td>
           </tr>
-        </table>
-        <h2>Aiming to learn</h2>
-        <table>
+          <tr>
+            <td>React</td>
+            <td class="symbol"><i class="fa-brands fa-react"></i></td>
+          </tr>
           <tr>
             <td>TypeScript</td>
             <td class="symbol typescript">
@@ -813,22 +917,25 @@
             </td>
           </tr>
           <tr>
-            <td>React</td>
-            <td class="symbol"><i class="fa-brands fa-react"></i></td>
-          </tr>
-          <tr>
-            <td>Java</td>
-            <td class="symbol"><i class="fa-brands fa-java"></i></td>
+            <td>Redux</td>
+            <td class="symbol redux">
+              <img src="./assets/img/redux.svg" alt="" />
+            </td>
           </tr>
           <tr>
             <td>MySQL</td>
             <td class="symbol"><i class="fa-solid fa-database"></i></td>
           </tr>
           <tr>
-            <td>Tailwind</td>
-            <td class="symbol tailwind">
-              <img src="./assets/img/tailwind.svg" alt="" />
-            </td>
+            <td>Node.js</td>
+            <td class="symbol"><i class="fa-brands fa-node-js"></i></td>
+          </tr>
+        </table>
+        <h2>Aiming to learn</h2>
+        <table>
+          <tr>
+            <td>Java</td>
+            <td class="symbol"><i class="fa-brands fa-java"></i></td>
           </tr>
         </table>
       </div>
